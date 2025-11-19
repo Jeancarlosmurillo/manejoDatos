@@ -1,48 +1,54 @@
-<<<<<<< HEAD
 # manejoDatos
-=======
-# manejo-datos
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplicación **Vue 3 + Vite** que consume la API pública de **Rick and Morty** para listar y explorar personajes. Incluye enrutamiento con Vue Router y manejo de estado con Vuex.
 
-## Recommended IDE Setup
+## Tecnologías
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue 3 + Vite 7
+- Vue Router 4
+- Vuex 4
+- ESLint + Prettier
 
-## Recommended Browser Setup
+## Requisitos
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Node.js `^20.19.0 || >=22.12.0`
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Instalación y ejecución
 
 ```sh
+# Instalar dependencias
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Servidor de desarrollo con hot-reload
 npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
+# Compilar para producción
 npm run build
+
+# Previsualizar el build de producción
+npm run preview
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+Por defecto la app queda en `http://localhost:5173`.
+
+## Calidad de código
 
 ```sh
+# Linter (ESLint) con autofix
 npm run lint
+
+# Formateo (Prettier)
+npm run format
 ```
->>>>>>> a965909 (Proyecto manejo de datos)
+
+## Estructura
+
+```
+src/
+├── App.vue          # Componente raíz
+├── main.js          # Punto de entrada
+├── router/          # Definición de rutas
+├── store/           # Estado global (Vuex)
+├── views/           # Vistas por ruta
+└── components/       # Componentes reutilizables (cards)
+```
